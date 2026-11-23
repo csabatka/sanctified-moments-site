@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanctified Moments</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg: #F5F0E4; --text: #1B2236; --muted: #4A4E5C; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141A2A; --text: #F1E6CF; --muted: #C9BFAA; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 32px; margin: 0 0 8px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <!-- GitHub Pages serves this page for any unknown path, including every sticker link
+       (sanctifiedmoments.com/t/...), which opens here when the app isn't installed. Plan 040. -->
+  <div id="sticker" hidden>
+    <h1>This is a Sanctified Moments sticker</h1>
+    <p>Someone set it up to open a Moment, a short pause to pray or do something better with the time, or to start blocking distracting apps.</p>
+    <p>To use it, install Sanctified Moments, then tap the sticker again.</p>
+  </div>
+  <div id="missing">
+    <h1>Page not found</h1>
+    <p>There's nothing at this address.</p>
+  </div>
+  <p class="muted"><a href="/">Sanctified Moments</a> · <a href="/privacy/">Privacy policy</a></p>
+</main>
+<script>
+  if (location.pathname.indexOf("/t/") === 0) {
+    document.getElementById("sticker").hidden = false;
+    document.getElementById("missing").hidden = true;
+  }
+</script>
+</body>
+</html>
