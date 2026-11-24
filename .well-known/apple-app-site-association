@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["565NDA65PC.com.sanctifiedmoments.app"],
+        "components": [
+          { "/": "/t/*", "comment": "NFC sticker links (plan 040)" }
+        ]
+      }
+    ]
+  }
+}
